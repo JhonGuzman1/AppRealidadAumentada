@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ACTIVITIES.RealidadVirtualActivity"
+    >
+
+   <fragment
+       android:id="@+id/fr_realidad_virtual"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:name="com.google.ar.sceneform.ux.ArFragment"
+       />
+
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_alignParentBottom="true"
+       android:gravity="center"
+      android:layout_marginBottom="20dp"
+       android:padding="20dp"
+       >
+      <Button
+          android:id="@+id/btn_tomar_foto"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="Tomar Foto"
+          android:textColor="@color/colorBlanco"
+          android:textSize="23sp"
+          android:background="@drawable/btn_curva"
+
+          />
+   </LinearLayout>
+
+
+
+</RelativeLayout>

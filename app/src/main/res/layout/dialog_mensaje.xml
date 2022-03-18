@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorTransparente"
+    >
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        app:cardUseCompatPadding="true"
+        app:cardBackgroundColor="@color/colorBlanco"
+        app:cardCornerRadius="15dp"
+        android:layout_margin="4dp"
+        app:cardElevation="5dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/tv_mensaje_dialog_mensaje"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Foto tomada con éxito"
+                android:textStyle="bold"
+                android:textSize="24sp"
+                android:textAlignment="center"
+                android:layout_marginVertical="25dp"
+                android:textColor="@color/colorNegro"
+                />
+            <Button
+                android:id="@+id/btn_aceptar_dialog_mensaje"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_curva"
+                android:layout_marginVertical="25dp"
+                android:layout_marginHorizontal="20dp"
+                android:text="Aceptar"
+                android:textColor="@color/colorBlanco"
+                android:elevation="0dp"
+                />
+
+        </LinearLayout>
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+</RelativeLayout>
